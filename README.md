@@ -32,7 +32,7 @@ After creating an app, it should look something like:
 ├── README.md
 ├── components
 │   ├── head.js
-│   └── nav.js
+│   └── Nav.js
 ├── next.config.js
 ├── node_modules
 │   ├── [...]
