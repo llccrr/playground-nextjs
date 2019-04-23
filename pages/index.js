@@ -13,8 +13,7 @@ const App = props => {
     return (
         <div>
             <Head>
-                <title>Super application de tard</title>
-                <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
+                <title>Super application de tard</title>                
             </Head>
             <Nav theme="FPS | TPS" id="fps-tps" />
             <div className="hero">
