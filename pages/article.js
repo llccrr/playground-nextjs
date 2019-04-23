@@ -5,10 +5,10 @@ import Head from 'next/head';
 
 const Article = ({ articleDetail }) => (
     <div>
-        <Head>
-            {/*<title>{articleDetail.title}</title>*/}
-            <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
-        </Head>
+        {/*<Head>*/}
+        {/*/!*<title>{articleDetail.title}</title>*!/*/}
+        {/*/!*<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js" />*!/*/}
+        {/*</Head>*/}
         {/*<h1>{articleDetail.title}</h1>*/}
         <amp-story standalone title="Joy of Pets" publisher="AMP tutorials" poster-portrait-src="/static/cover.jpg">
             <amp-story-page id="cover">

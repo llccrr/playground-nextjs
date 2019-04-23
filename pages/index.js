@@ -1,16 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
 // import Head from '../components/head';
+import Head from 'next/head';
 import Nav from '../components/Nav';
 import UIHeader from '../components/Header';
 import { getArticles } from '../api/melty.api';
 import { withAmp, useAmp } from 'next/amp';
 
-const Home = props => {
+const App = props => {
     const isAmp = useAmp();
 
     return (
         <div>
+            <Head>
+                <title>Super application de tard</title>
+                <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js" />
+            </Head>
             <Nav theme="FPS | TPS" id="fps-tps" />
             <div className="hero">
                 <h1 className="title">Welcome to Next! {isAmp ? 'AMP' : 'normal'} </h1>
@@ -75,7 +80,7 @@ const Home = props => {
     );
 };
 
-Home.getInitialProps = async () => {
+App.getInitialProps = async () => {
     const data = await getArticles();
 
     return {
@@ -83,4 +88,4 @@ Home.getInitialProps = async () => {
     };
 };
 
-export default Home;
+export default App;
